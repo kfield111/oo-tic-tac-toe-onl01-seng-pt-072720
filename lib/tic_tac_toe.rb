@@ -84,9 +84,9 @@ WIN_COMBINATIONS.each do |combo|
   combo
   end
 
-if x_positions.inject(0, :+) == 21
-  true
-end
+  if x_positions.inject(0, :+) == 21
+    true
+  end
 end
 
 
