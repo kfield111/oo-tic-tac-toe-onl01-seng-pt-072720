@@ -74,7 +74,9 @@ end
 #   end
 # end
 
-
+def won?
+  board.collect{|win_cond| WIN_COMBINATIONS.inlcude?(win_cond)}.include?
+end
 
 
 
