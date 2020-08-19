@@ -78,8 +78,8 @@ def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
 
-puts "#{x_positions.inject(0, :+)}"
-binding.pry
+if x_positions.inject(0, :+) == 21
+  true
 end
 
 
