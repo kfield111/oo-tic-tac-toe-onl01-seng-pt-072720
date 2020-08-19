@@ -76,7 +76,6 @@ end
 
 def won?
   board.include? (WIN_COMBINATIONS)
-  binding.pry
 end
 
 
