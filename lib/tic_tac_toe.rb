@@ -76,8 +76,7 @@ end
 
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
-0_positions = board.each_index.select{|i| board[i] == "O"}
-combos = WIN_COMBINATIONS.flatten
+o_positions = board.each_index.select{|i| board[i] == "O"}
 
 puts "#{x_positions.inject(0, :+)}"
 binding.pry
