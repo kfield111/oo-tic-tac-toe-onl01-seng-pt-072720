@@ -80,7 +80,7 @@ o_indexes = []
 
 board.each do |temp|
   if temp == "X"
-    x_indexes << board[]
+    x_indexes << temp[]
   elsif temp == "O"
     o_indexes << board[]
   end
