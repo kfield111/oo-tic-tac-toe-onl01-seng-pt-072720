@@ -78,7 +78,6 @@ def won?
 board.collect {|x| WIN_COMBINATIONS.include?(x)}
 end
 
-end
 
 
 
