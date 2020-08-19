@@ -74,7 +74,7 @@ end
 #   end
 # end
 
-def won?
+def x_o_positions
 x_indexes = []
 o_indexes = []
 
@@ -85,7 +85,11 @@ board.each do |temp|
     o_indexes << board[]
   end
 end
+x_indexes
+o_indexes
 end
+
+
 #INDEX:  0  1  2  3  4  5  6  7  8
 #ARRAY:  X  O  X  O  X  X  O  X  O
 
