@@ -73,8 +73,8 @@ WIN_COMBINATIONS.each do |combo|
   else
     false
   end
-  binding.pry
 end
+binding.pry
   #
   # if x_positions.inject(0, :+) == 21
   #   true
