@@ -77,6 +77,7 @@ end
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 y_positions = board.each_index.select{|i| board[i] == "O"}
+
 binding.pry
 
 end
