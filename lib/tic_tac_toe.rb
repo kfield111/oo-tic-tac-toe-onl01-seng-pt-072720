@@ -79,7 +79,7 @@ x_positions = board.each_index.select{|i| board[i] == "X"}
 0_positions = board.each_index.select{|i| board[i] == "O"}
 combos = WIN_COMBINATIONS.flatten
 
-x_positions.inject(0, :+)
+puts x_positions.inject(0, :+)
 
 end
 
