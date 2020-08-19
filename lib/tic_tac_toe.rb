@@ -82,6 +82,7 @@ WIN_COMBINATIONS.each do |combo|
   if combo[0] == x_positions.find (combo[0]) && combo[1] == x_positions.find (combo[1]) && combo[2] == x_positions.find (combo[2])
     combo
   end
+end
 
   if x_positions.inject(0, :+) == 21
     true
