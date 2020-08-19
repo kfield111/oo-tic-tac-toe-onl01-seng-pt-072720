@@ -4,14 +4,14 @@ class TicTacToe
   attr_reader :board, :gets
 
 WIN_COMBINATIONS = [
-  [0,1,2],
-  [3,4,5],
-  [6,7,8],
-  [0,3,6],
-  [1,4,7],
-  [2,5,8],
-  [0,4,8],
-  [2,4,6]
+  [0,1,2],  #3
+  [3,4,5],  #12
+  [6,7,8],  #21
+  [0,3,6],  #9
+  [1,4,7],  #12
+  [2,5,8],  #15
+  [0,4,8],  #12
+  [2,4,6]   #12
 ]
 
   def initialize
@@ -76,17 +76,29 @@ end
 
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
-y_positions = board.each_index.select{|i| board[i] == "O"}
+0_positions = board.each_index.select{|i| board[i] == "O"}
+combos = WIN_COMBINATIONS.flatten
 
-binding.pry
+x_positions.inject(0, :+)
 
 end
 
 
-#INDEX:  0  1  2  3  4  5  6  7  8
+#INDEX:  0  1  2  3  4  5  6  7  8    --  DRAW
 #ARRAY:  X  O  X  O  X  X  O  X  O
 
 
+#INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
+#ARRAY:  X  O  X  O  X  O  O  X  X
+
+#INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
+#ARRAY:  X  O  O  X  X  O  X  O  X
+
+# 0  1  2
+# 3  4  5 
+# 6  7  8 
+
+9
 
 
 end
