@@ -69,8 +69,12 @@ o_positions = board.each_index.select{|i| board[i] == "O"}
 
 WIN_COMBINATIONS.each do |combo|
   if x_positions.includes? {combo[0] && combo[1] && combo[2]}
-    return combo
+    true
+    combo
+  else
+    false
   end
+  combo
 end
   #
   # if x_positions.inject(0, :+) == 21
