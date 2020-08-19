@@ -87,6 +87,7 @@ board.each do |temp|
 end
 x_indexes
 o_indexes
+binding.pry
 end
 
 
