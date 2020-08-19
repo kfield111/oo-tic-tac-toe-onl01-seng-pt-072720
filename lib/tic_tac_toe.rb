@@ -86,7 +86,6 @@ WIN_COMBINATIONS.each do |combo|
 
 if x_positions.inject(0, :+) == 21
   true
-  winning_combo
 end
 end
 
