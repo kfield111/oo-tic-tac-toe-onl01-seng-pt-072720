@@ -89,7 +89,9 @@ x_indexes
 o_indexes
 end
 
-binding.pry
+def won?
+  x_o_positions
+end
 
 
 #INDEX:  0  1  2  3  4  5  6  7  8
