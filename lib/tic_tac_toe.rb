@@ -76,9 +76,6 @@ end
 
 def won?
 board.any? {|x| WIN_COMBINATIONS.include?(board)}
-  else
-    false
-  end
 end
 
 
