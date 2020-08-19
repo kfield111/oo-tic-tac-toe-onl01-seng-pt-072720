@@ -81,7 +81,6 @@ o_positions = board.each_index.select{|i| board[i] == "O"}
 if x_positions.inject(0, :+) == 21
   true
 end
-binding.pry
 end
 
 
