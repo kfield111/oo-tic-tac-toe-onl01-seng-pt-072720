@@ -75,7 +75,7 @@ end
 # end
 
 def won?
-board.any? {|x| WIN_COMBINATIONS.include?(board)}
+board.any? {|x| WIN_COMBINATIONS.include?(x)}
 end
 
 
