@@ -75,9 +75,9 @@ end
 # end
 
 def won?
-
-board.each do |temp|
-  board.each_index.select{|i| board[i] == "X"}
+x_positions = board.each_index.select{|i| board[i] == "X"}
+y_positions = board.each_index.select{|i| board[i] == "O"}
+binding.pry
 
 end
 
