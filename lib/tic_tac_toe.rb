@@ -63,17 +63,6 @@ def turn
 end
 
 
-# def won?
-#   #win condition exists ? if so then true : or false
-#   board.each do |combinations|
-#     if WIN_COMBINATIONS == combinations
-#       combinations
-#     else
-#       false
-#     end
-#   end
-# end
-
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
