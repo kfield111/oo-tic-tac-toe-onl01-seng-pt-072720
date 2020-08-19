@@ -76,7 +76,7 @@ end
 
 def won?
 board.each do |x|
-  if WIN_COMBINATIONS.include?(x)
+  WIN_COMBINATIONS.include?(x) ? true : false
   end
 end
 
