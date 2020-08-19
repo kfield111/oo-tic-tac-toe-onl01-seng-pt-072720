@@ -75,7 +75,7 @@ end
 # end
 
 def won?
-  board.collect{|win_cond| WIN_COMBINATIONS.include?(win_cond)}.include?
+  board.include? (WIN_COMBINATIONS)
   binding.pry
 end
 
