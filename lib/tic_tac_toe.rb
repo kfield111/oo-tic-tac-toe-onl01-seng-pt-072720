@@ -80,8 +80,7 @@ o_positions = board.each_index.select{|i| board[i] == "O"}
 
 WIN_COMBINATIONS.each do |combo|
   if combo[0] == x_positions.find (combo) && combo[1] == x_positions.find (combo) && combo[2] == x_positions.find (combo)
-  end
-  combo
+    combo
   end
 
   if x_positions.inject(0, :+) == 21
