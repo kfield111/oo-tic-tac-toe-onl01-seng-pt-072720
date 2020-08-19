@@ -82,7 +82,7 @@ board.each do |temp|
   if temp == "X"
     x_indexes << temp[]
   elsif temp == "O"
-    o_indexes << board[]
+    o_indexes << temp[]
   end
 end
 x_indexes
