@@ -75,7 +75,10 @@ end
 # end
 
 def won?
-  board.include? (WIN_COMBINATIONS)
+  if board.include? (WIN_COMBINATIONS)
+    board
+  else
+    false
 end
 
 
