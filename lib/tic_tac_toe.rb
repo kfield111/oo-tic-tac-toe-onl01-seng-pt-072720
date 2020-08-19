@@ -75,19 +75,10 @@ end
 # end
 
 def won?
-x_indexes = []
-o_indexes = []
 
 board.each do |temp|
-  if temp == "X"
-    x_indexes << temp[]
-  elsif temp == "O"
-    o_indexes << temp[]
-  end
-end
-x_indexes
-o_indexes
-binding.pry
+  board.each_index.select{|i| board[i] == "X"}
+
 end
 
 
