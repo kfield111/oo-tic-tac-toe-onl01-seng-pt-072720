@@ -74,7 +74,7 @@ end
 #   end
 # end
 
-def x_o_positions
+def won?
 x_indexes = []
 o_indexes = []
 
@@ -87,11 +87,6 @@ board.each do |temp|
 end
 x_indexes
 o_indexes
-end
-
-def won?
-  x_o_positions
-binding.pry
 end
 
 
