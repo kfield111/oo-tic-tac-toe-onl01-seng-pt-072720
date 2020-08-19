@@ -76,7 +76,7 @@ end
 
 def won?
   if board.include? (WIN_COMBINATIONS)
-    board
+    board.to_a
   else
     false
   end
