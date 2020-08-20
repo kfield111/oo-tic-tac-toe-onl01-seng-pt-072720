@@ -80,7 +80,7 @@ end
 def full?
 if board.all? {|position| position == "X" || "O"}
   true
-elsif board.any? {|position| position == " "}
+elsif board.detect {|position| position == " "}
   false
 end
 end
