@@ -91,7 +91,7 @@ end
 
 def winner
   if won?
-    return current_player
+    return turn_count
   end
 end
 
