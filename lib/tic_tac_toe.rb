@@ -92,8 +92,8 @@ end
 def last_move
   turn_count - 1
   current_player
-  binding.pry
 end
+binding.pry
 
 def winner
   if won?
