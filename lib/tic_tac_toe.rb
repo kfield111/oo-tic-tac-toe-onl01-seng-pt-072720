@@ -78,9 +78,8 @@ end
 
 
 def full?
-  if won? == false
-    return true
-  end
+ board.detect do |temp|
+  temp == " " ? : false : true
 end
 
 
