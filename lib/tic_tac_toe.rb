@@ -69,7 +69,7 @@ o_positions = board.each_index.select{|i| board[i] == "O"}
 
 
 WIN_COMBINATIONS.each do |combo|
-    if combo.each {|i| break unless x_positions.to_a.include?(i)}
+    if x_positions.include? (combo)
       return combo
     else
       return false
