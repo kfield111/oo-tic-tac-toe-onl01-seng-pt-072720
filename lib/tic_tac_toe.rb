@@ -78,10 +78,7 @@ end
 
 
 def full?
-if board.all? {|position| position == "X" || "O"}
-  true
-elsif board.detect {|position| position == " "}
-  false
+if board.none? {|position| position == "X" || "O"}
 end
 end
 
