@@ -83,6 +83,7 @@ if board.all? {|position| position == "X" || "O"}
 else
   false
 end
+end
 
 
 
