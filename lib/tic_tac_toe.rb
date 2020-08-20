@@ -71,7 +71,7 @@ WIN_COMBINATIONS.each do |combo|
     if (combo - x_positions).empty?
       return combo
     else
-      return false
+     false
     end
   end
 end
