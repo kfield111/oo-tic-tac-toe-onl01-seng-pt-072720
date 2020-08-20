@@ -49,6 +49,7 @@ end
 
 def current_player
  turn_count.odd? ? "O" : "X"
+   binding.pry
 end
 
 def turn
