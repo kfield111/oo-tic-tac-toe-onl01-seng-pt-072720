@@ -67,17 +67,20 @@ def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
 
+
+
+
+# WIN_COMBINATIONS.each do |combo|
+#   if x_positions.include?(combo[0] && combo[1] && combo[2])
+#     return combo
+#   else
+#     return false
+#   end
+# end
 WIN_COMBINATIONS.each do |combo|
-  if x_positions.include?(combo[0] && combo[1] && combo[2])
-    return combo
-  else
-    return false
-  end
-end
-  #
-  # if x_positions.inject(0, :+) == 21
-  #   true
-  # end
+ win_combos = x_positions - combo
+
+
 end
 
 
