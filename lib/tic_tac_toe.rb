@@ -69,7 +69,7 @@ o_positions = board.each_index.select{|i| board[i] == "O"}
 binding.pry
 
 WIN_COMBINATIONS.each do |combo|
-    if x_positions.include? (combo)
+    if x_positions.include? (combo[0] && combo[1] && combo[2])
       return combo
     else
       return false
@@ -83,17 +83,27 @@ end
 
 
 
-#INDEX:  0  1  2  3  4  5  6  7  8    --  DRAW
-#ARRAY:  X  O  X  O  X  X  O  X  O
-
+# INDEX:  0  1  2  3  4  5  6  7  8    --  DRAW
+# ARRAY:  X  O  X  O  X  X  O  X  O
+#
 #    x_positions = [0, 2, 4, 5, 7]
-
-#INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
-#ARRAY:  X  O  X  O  X  O  O  X  X
-
-#INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
-#ARRAY:  X  O  O  X  X  O  X  O  X
-
-# 0  1  2
-# 3  4  5
-# 6  7  8
+#
+# -------------------------------------------------------
+#
+# INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
+# ARRAY:  X  O  X  O  X  O  O  X  X
+#
+#     x_positions = [0, 2, 4, 7, 8]
+#
+# -------------------------------------------------------
+#
+# INDEX:  0  1  2  3  4  5  6  7  8    --  WIN
+# ARRAY:  X  O  O  X  X  O  X  O  X
+#
+#   x_positions = [0, 3, 4, 6, 8]
+#
+# -------------------------------------------------------
+#
+#  0  1  2
+#  3  4  5
+#  6  7  8
