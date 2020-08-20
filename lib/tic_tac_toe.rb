@@ -78,7 +78,7 @@ end
 
 
 def full?
-  if won == false
+  if won? == false
     return true
   end
 end
