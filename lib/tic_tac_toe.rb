@@ -70,10 +70,10 @@ set_winner = nil
 
 WIN_COMBINATIONS.detect do |combo|
     if (combo - x_positions).empty?
-      set_winner = "X"
+      @set_winner = "X"
       return combo
     elsif (combo - o_positions).empty?
-        set_winner = "O"
+        @set_winner = "O"
         return combo
     else
      false
@@ -96,7 +96,7 @@ end
 
 def winner
   if won?
-    won?.set_winner
+    @set_winner
   end
 end
 
