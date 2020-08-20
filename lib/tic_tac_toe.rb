@@ -79,7 +79,7 @@ end
 
 def full?
  if board.find(" ")
-   false
+   true
  else
    true
  end
