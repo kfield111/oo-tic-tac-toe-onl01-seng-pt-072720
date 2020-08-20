@@ -78,7 +78,8 @@ end
 
 
 def full?
-board.all? {|position| position =="X" || position ="O"}
+board.all? {|position| position == "X" || position = "O"}
+binding.pry
 end
 
 
