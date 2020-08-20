@@ -107,6 +107,7 @@ def play
   end
 
   if won?
+    puts "Congratualtions #{@set_winner}"
   end
 end
 
