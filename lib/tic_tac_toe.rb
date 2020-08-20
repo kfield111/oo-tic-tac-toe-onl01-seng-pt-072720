@@ -78,11 +78,7 @@ end
 
 
 def full?
- if board.find(" ")
-   true
- else
-   false
- end
+board.all? == "X" || "O" ? true : false
 end
 
 
