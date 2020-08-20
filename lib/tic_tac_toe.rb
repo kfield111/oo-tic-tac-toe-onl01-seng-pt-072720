@@ -96,9 +96,7 @@ end
 
 def winner
   if won?
-
   end
-  binding.pry
 end
 
 
