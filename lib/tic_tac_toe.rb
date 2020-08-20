@@ -66,10 +66,15 @@ end
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
+set_winner = nil
 
 WIN_COMBINATIONS.detect do |combo|
     if (combo - x_positions).empty?
+      set_winner = "X"
       return combo
+    elsif (combo - o_positions).empty?
+        set_winner = "O"
+        return combo
     else
      false
     end
@@ -91,6 +96,7 @@ end
 
 def winner
   if won?
+
   end
   binding.pry
 end
