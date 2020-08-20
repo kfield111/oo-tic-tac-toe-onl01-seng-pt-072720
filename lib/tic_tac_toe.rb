@@ -75,7 +75,6 @@ WIN_COMBINATIONS.each do |combo|
       return false
     end
   end
-    binding.pry
 end
 
 
