@@ -78,8 +78,10 @@ end
 
 
 def full?
-board.all? {|position| position == "X" || "O"}
-binding.pry
+if board.all? {|position| position == "X" || "O"}
+  true
+else
+  false
 end
 
 
