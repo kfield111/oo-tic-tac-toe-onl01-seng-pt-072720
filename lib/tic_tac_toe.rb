@@ -89,11 +89,6 @@ def over?
 won? || draw? ? true : false
 end
 
-def last_move
-  turn_count - 1
-  current_player
-end
-
 def winner
   if won?
     last_move
