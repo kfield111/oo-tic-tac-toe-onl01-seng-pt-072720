@@ -107,7 +107,7 @@ def play
   end
 
   if won?
-    puts "Congratualtions #{@set_winner}"
+    puts "Congratualtions #{@set_winner}!"
   elsif draw?
     puts "Game has ended in a draw"
   end
