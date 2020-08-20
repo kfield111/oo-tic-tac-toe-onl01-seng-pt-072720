@@ -78,10 +78,11 @@ end
 
 
 def full?
- board.detect do |temp|
+ board.each do |temp|
   temp == " " ? false : true
 end
 end
+
 
 
 
