@@ -107,6 +107,8 @@ def play
   end
 
   if won?
+  end
+end
 
 
 
