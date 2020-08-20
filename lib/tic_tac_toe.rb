@@ -92,7 +92,7 @@ end
 def winner
   if won?
   turn_count + 1
-  current_player
+  self.current_player
   end
 end
 
