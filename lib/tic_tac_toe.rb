@@ -82,6 +82,7 @@ WIN_COMBINATIONS.each do |combo|
       return combo
     else
       return false
+      binding.pry
     end
   end
 end
