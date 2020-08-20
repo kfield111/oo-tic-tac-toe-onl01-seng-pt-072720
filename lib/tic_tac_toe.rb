@@ -78,7 +78,7 @@ end
 
 
 def full?
-board.all? {|position| position == "X" || "O"}
+board.all? {|position| puts position}
 end
 
 
