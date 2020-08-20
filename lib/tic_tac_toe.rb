@@ -96,7 +96,7 @@ end
 
 def winner
   if won?
-    win.set_winner
+    won?.set_winner
   end
 end
 
