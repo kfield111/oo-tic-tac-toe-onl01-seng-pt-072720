@@ -81,6 +81,7 @@ def full?
  board.detect do |temp|
   temp == " " ? : false : true
 end
+end
 
 
 
