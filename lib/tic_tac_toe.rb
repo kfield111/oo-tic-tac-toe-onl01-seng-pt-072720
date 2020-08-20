@@ -78,9 +78,7 @@ end
 
 
 def full?
- board.each do |temp|
-  temp == " " ? false : true
-else false
+ board.any? (" ")
 end
 end
 
