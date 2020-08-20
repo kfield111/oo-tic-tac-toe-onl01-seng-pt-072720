@@ -95,7 +95,7 @@ end
 
 def winner
   if won?
-    
+
   end
 end
 
