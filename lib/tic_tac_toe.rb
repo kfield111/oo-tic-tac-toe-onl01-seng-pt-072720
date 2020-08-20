@@ -79,7 +79,7 @@ end
 
 def full?
  board.detect do |temp|
-  temp == " " ? : false : true
+  temp == " " ? false : true
 end
 end
 
