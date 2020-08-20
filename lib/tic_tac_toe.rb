@@ -68,7 +68,7 @@ x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
 
 WIN_COMBINATIONS.each do |combo|
-    if (x_positions & [combo[0], combo[1], combo[2]]).present?
+    if (combo - x_positions).empty?
       return combo
     else
       return false
