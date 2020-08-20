@@ -78,7 +78,15 @@ end
 
 
 def full?
-board.all? {|temp| temp == "X" || temp = "O"}
+board.all? {|position| position == "X" || position == "O"}
+end
+
+def draw?
+
+end
+
+def over?
+
 end
 
 
