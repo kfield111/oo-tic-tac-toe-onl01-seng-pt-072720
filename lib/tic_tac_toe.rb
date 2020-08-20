@@ -80,6 +80,7 @@ end
 def full?
  board.each do |temp|
   temp == " " ? false : true
+else false
 end
 end
 
