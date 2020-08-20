@@ -66,7 +66,6 @@ end
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
-binding.pry
 
 WIN_COMBINATIONS.each do |combo|
     if x_positions.include? (combo[0] && combo[1] && combo[2])
