@@ -78,7 +78,7 @@ end
 
 
 def full?
- board.any? (" ") ? true : false
+ board.find (" ") ? true : false
 end
 
 
