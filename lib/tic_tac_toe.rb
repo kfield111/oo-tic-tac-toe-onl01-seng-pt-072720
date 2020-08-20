@@ -79,6 +79,7 @@ end
 
 def full?
 if board.none? {|position| position == "X" || "O"}
+  false
 else
   true
 end
