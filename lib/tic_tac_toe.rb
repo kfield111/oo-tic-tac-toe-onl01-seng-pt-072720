@@ -82,6 +82,7 @@ def full?
    true
  else
    false
+ end
 end
 
 
