@@ -91,7 +91,7 @@ end
 
 def winner
   if won?
-    return turn_count
+    return turn_count + 1
   end
 end
 
