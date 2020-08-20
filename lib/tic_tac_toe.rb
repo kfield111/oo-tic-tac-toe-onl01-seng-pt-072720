@@ -102,14 +102,14 @@ end
 
 
 def play
-  until won?
+  until over?
     turn
   end
 
   if won?
     puts "Congratulations #{@set_winner}!"
   elsif draw?
-    puts "Game has ended in a draw"
+    puts "Cats Game!"
   end
 end
 
