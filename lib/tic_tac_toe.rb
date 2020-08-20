@@ -89,10 +89,13 @@ def over?
 won? || draw? ? true : false
 end
 
+def last_move
+  turn_count - 1
+end
+
 def winner
   if won?
-  turn_count + 1
-  self.current_player
+    
   end
 end
 
