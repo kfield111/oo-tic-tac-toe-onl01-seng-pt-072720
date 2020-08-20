@@ -91,7 +91,6 @@ end
 
 def winner
   if won?
-    turn - 1
     return current_player
   end
 end
