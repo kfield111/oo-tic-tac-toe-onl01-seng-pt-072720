@@ -77,6 +77,7 @@ WIN_COMBINATIONS.each do |combo|
     end
   end
 end
+binding.pry
 
 
 #INDEX:  0  1  2  3  4  5  6  7  8    --  DRAW
