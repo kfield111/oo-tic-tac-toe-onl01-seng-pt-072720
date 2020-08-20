@@ -79,6 +79,7 @@ end
 
 def full?
 board.all? {|position| puts position}
+binding.pry
 end
 
 
