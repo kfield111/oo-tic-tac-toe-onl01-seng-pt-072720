@@ -101,6 +101,14 @@ def winner
 end
 
 
+def play
+  until won?
+    turn
+  end
+
+  if won?
+
+
 
 end
 
