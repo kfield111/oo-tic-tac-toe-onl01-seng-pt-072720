@@ -77,6 +77,15 @@ WIN_COMBINATIONS.detect do |combo|
 end
 
 
+def full?
+  if won == false
+    return true
+  end
+end
+
+
+
+
 end
 
 
