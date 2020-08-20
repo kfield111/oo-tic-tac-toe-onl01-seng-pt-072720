@@ -86,7 +86,7 @@ full? && !won? ? true : false
 end
 
 def over?
-
+won? || draw? ? true : false
 end
 
 
