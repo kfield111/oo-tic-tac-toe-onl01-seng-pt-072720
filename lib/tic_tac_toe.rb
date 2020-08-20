@@ -49,7 +49,6 @@ end
 
 def current_player
  turn_count.odd? ? "O" : "X"
-   binding.pry
 end
 
 def turn
@@ -67,16 +66,20 @@ end
 def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
-
+binding.pry
 
 WIN_COMBINATIONS.each do |combo|
-    if x_positions.include? (combo.collect)
+    if x_positions.include? (combo)
       return combo
     else
       return false
     end
   end
 end
+
+
+end
+
 
 
 
@@ -94,6 +97,3 @@ end
 # 0  1  2
 # 3  4  5
 # 6  7  8
-
-
-end
