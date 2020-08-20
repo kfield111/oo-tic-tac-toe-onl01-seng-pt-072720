@@ -67,7 +67,7 @@ def won?
 x_positions = board.each_index.select{|i| board[i] == "X"}
 o_positions = board.each_index.select{|i| board[i] == "O"}
 
-WIN_COMBINATIONS.each do |combo|
+WIN_COMBINATIONS.detect do |combo|
     if (combo - x_positions).empty?
       return combo
     else
@@ -78,7 +78,6 @@ end
 
 
 end
-
 
 
 
