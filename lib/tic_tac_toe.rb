@@ -89,7 +89,9 @@ def over?
 won? || draw? ? true : false
 end
 
-
+def winner
+  if won?
+    return current_player
 
 
 
