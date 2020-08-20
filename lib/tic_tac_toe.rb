@@ -96,7 +96,7 @@ end
 
 def winner
   if won?
-
+    last_move
   end
 end
 
