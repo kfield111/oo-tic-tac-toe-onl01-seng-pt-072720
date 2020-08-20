@@ -82,7 +82,7 @@ board.all? {|position| position == "X" || position == "O"}
 end
 
 def draw?
-full? == true && won? == false ? true : false
+full? && !won? == false ? true : false
 end
 
 def over?
